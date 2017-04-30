@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>date</title>
+</head>
+<body>
+    <input id="a" type="date"/>
+    <input id="b" type="date"/>
+    <button onclick="e()">try me</button>
+    <p id="result"></p>
+
+
+   <script>
+       function e()
+       {
+           var c=document.getElementById("a").value;
+           var d=document.getElementById("b").value;
+           if(c>d)
+           {
+           document.getElementById("result").innerHTML=c+ "greater than";
+           }
+       }
+   </script>
+
+</body>
+</html>

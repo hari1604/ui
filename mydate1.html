@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>mydate</title>
+    <style>
+        .one{
+        width:700px;
+        height:300px;
+        background:#b6f442;
+        margin-left:200px;
+        text-align:center;
+
+        }
+    </style>
+</head>
+<body>
+
+
+
+    <div class="one" >
+        <h1><U>NACRE SOFTWARE SERVICES</U></h1>
+        <h3 style="color:green;">Please Enter Your Date Of Birth:<input id="one" type="date"/></h3>
+        <button onclick="ab()">Try me</button>
+        <h3>Today's Date and Time:<span  id="demo"></span></h3>
+        <h3>HELLO Friend U R <span id="demo1"></span> Year's old.</h3>
+
+    </div>
+
+
+        <script>
+           var a = new Date();
+
+           document.getElementById('demo').innerHTML = a.toLocaleString();
+                    function ab(){
+
+                    var c=document.getElementById('one').value;
+
+                    var diff;
+                    var days= 1000*60*60*24*365;
+                    var diff=Date.parse(a)-Date.parse(c);
+                    document.getElementById('demo1').innerHTML= Math.floor(diff/days);
+
+            }
+
+
+        </script>
+
+</body>
+</html>
+
+
+
